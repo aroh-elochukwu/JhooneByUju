@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32519.379
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JhooneByUjuWeb", "JhooneByUjuWeb\JhooneByUjuWeb.csproj", "{FDFDCC45-E98B-415B-BA8D-F7176F6DE418}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FDFDCC45-E98B-415B-BA8D-F7176F6DE418}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDFDCC45-E98B-415B-BA8D-F7176F6DE418}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDFDCC45-E98B-415B-BA8D-F7176F6DE418}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDFDCC45-E98B-415B-BA8D-F7176F6DE418}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7D3B2D1D-BDC0-47C9-90FA-AA7958CA9B81}
+	EndGlobalSection
+EndGlobal
