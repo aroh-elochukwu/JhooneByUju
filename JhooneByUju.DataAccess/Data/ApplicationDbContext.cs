@@ -1,7 +1,7 @@
-﻿using JhooneByUjuWeb.Models;
+﻿using JhooneByUju.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace JhooneByUjuWeb.Data
+namespace JhooneByUju.DataAccess
 {
     public class ApplicationDbContext: DbContext
     {

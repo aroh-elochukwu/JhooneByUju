@@ -1,4 +1,4 @@
-using JhooneByUjuWeb.Data;
+using JhooneByUju.DataAccess;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

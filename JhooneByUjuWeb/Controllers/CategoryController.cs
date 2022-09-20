@@ -1,5 +1,5 @@
-﻿using JhooneByUjuWeb.Data;
-using JhooneByUjuWeb.Models;
+﻿using JhooneByUju.DataAccess;
+using JhooneByUju.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace JhooneByUjuWeb.Controllers

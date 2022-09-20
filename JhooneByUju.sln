@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32519.379
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JhooneByUjuWeb", "JhooneByUjuWeb\JhooneByUjuWeb.csproj", "{FDFDCC45-E98B-415B-BA8D-F7176F6DE418}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JhooneByUjuWeb", "JhooneByUjuWeb\JhooneByUjuWeb.csproj", "{FDFDCC45-E98B-415B-BA8D-F7176F6DE418}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JhooneByUju.DataAccess", "JhooneByUju.DataAccess\JhooneByUju.DataAccess.csproj", "{5A12490C-45F7-47EB-A84A-98F2EE570CAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JhooneByUju.Models", "JhooneByUju.Models\JhooneByUju.Models.csproj", "{66A57D75-0801-4311-B8A9-D319CCBF5D06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JhooneByUju.Utility", "JhooneByUju.Utility\JhooneByUju.Utility.csproj", "{1AF81A94-3AC2-4406-9414-F183FEA76354}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{FDFDCC45-E98B-415B-BA8D-F7176F6DE418}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDFDCC45-E98B-415B-BA8D-F7176F6DE418}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDFDCC45-E98B-415B-BA8D-F7176F6DE418}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A12490C-45F7-47EB-A84A-98F2EE570CAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A12490C-45F7-47EB-A84A-98F2EE570CAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A12490C-45F7-47EB-A84A-98F2EE570CAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A12490C-45F7-47EB-A84A-98F2EE570CAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66A57D75-0801-4311-B8A9-D319CCBF5D06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66A57D75-0801-4311-B8A9-D319CCBF5D06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66A57D75-0801-4311-B8A9-D319CCBF5D06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66A57D75-0801-4311-B8A9-D319CCBF5D06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AF81A94-3AC2-4406-9414-F183FEA76354}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AF81A94-3AC2-4406-9414-F183FEA76354}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AF81A94-3AC2-4406-9414-F183FEA76354}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AF81A94-3AC2-4406-9414-F183FEA76354}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
