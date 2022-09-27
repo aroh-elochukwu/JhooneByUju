@@ -8,9 +8,11 @@ using System.Threading.Tasks;
 
 namespace JhooneByUju.DataAccess.Repository.IRepository
 {
-    public class ICategoryRepository 
+    public class ICategoryRepository : Repository<Category>
     {
-        
-
+        public ICategoryRepository(ApplicationDbContext db) : base(db)
+        {
+        }
     }
+
 }
