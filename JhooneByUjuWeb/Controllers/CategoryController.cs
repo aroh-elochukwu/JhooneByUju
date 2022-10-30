@@ -1,4 +1,5 @@
 ﻿using JhooneByUju.DataAccess;
+using JhooneByUju.DataAccess.Repository.IRepository;
 using JhooneByUju.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -6,16 +7,16 @@ namespace JhooneByUjuWeb.Controllers
 {
     public class CategoryController : Controller
     {
-        private readonly ApplicationDbContext _db;
+        private readonly IUnitOfWork  _unitOfWork;
 
-        public CategoryController(ApplicationDbContext db)
+        public CategoryController(IUnitOfWork unitOfWork)
         {
-            _db = db;
+            _unitOfWork = unitOfWork;
         }
 
         public IActionResult Index()
         {
-            IEnumerable<Category> categoriesList = _db.Categories;
+            IEnumerable<Category> categoriesList = _unitOfWork.Category.GetAll();
 
             return View(categoriesList);
         }
@@ -39,8 +40,8 @@ namespace JhooneByUjuWeb.Controllers
             }
             if (ModelState.IsValid)
             {
-                _db.Categories.Add(category);
-                _db.SaveChanges();
+                _unitOfWork.Category.Add(category);
+                _unitOfWork.Save();
                 TempData["success"] = "Category created successfully";
 
                 return RedirectToAction("Index");
@@ -59,7 +60,7 @@ namespace JhooneByUjuWeb.Controllers
                 return NotFound();
             }
 
-            Category requestedCategory = _db.Categories.FirstOrDefault(c => c.Id == id);
+            Category requestedCategory = _unitOfWork.Category.GetFirstOrDefault(u => u.Name == "id");
 
             return View(requestedCategory);
         }
@@ -76,8 +77,8 @@ namespace JhooneByUjuWeb.Controllers
             }
             if (ModelState.IsValid)
             {
-                _db.Categories.Update(category);
-                _db.SaveChanges();
+                _unitOfWork.Category.Update(category);
+                _unitOfWork.Save();
                 TempData["success"] = "Category edited successfully";
 
                 return RedirectToAction("Index");
@@ -96,7 +97,7 @@ namespace JhooneByUjuWeb.Controllers
                 return NotFound();
             }
 
-            Category requestedCategory = _db.Categories.FirstOrDefault(c => c.Id == id);
+            Category requestedCategory = _unitOfWork.Category.GetFirstOrDefault(u => u.Id == id);
 
             return View(requestedCategory);
         }
@@ -107,8 +108,8 @@ namespace JhooneByUjuWeb.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Delete([Bind("Id,Name,DisplayOrder,CreatedDateTIme")] Category category)
         {
-            _db.Categories.Remove(category);
-            _db.SaveChanges();
+            _unitOfWork.Category.Remove(category);
+            _unitOfWork.Save();
             TempData["success"] = "Category deleted successfully";
 
             return RedirectToAction("Index");
